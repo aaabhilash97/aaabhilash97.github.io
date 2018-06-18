@@ -1,131 +1,135 @@
 <!DOCTYPE html>
 <html>
-<title>Abhilash KM Resume</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<style>
-  .sidebar {
-    grid-area: sidebar;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .content {
-    grid-area: content;
-  }
+<head>
+  <title>Abhilash KM Resume</title>
+  <meta name="description" content="Abhilash KM resume, Node.js, Javascript Developer.">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    .sidebar {
+      grid-area: sidebar;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  .footer {
-    grid-area: footer;
-  }
+    .content {
+      grid-area: content;
+    }
 
-  .profile-skill-fields {
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #fff;
-    color: #444;
-    padding-top: 10px;
-  }
+    .footer {
+      grid-area: footer;
+    }
 
-  .profile-skill-name {
-    grid-column: 1 / span 2;
-  }
+    .profile-skill-fields {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      background-color: #fff;
+      color: #444;
+      padding-top: 10px;
+    }
 
-  .profile-skill-rating {
-    grid-column: 3 / span 2;
-  }
+    .profile-skill-name {
+      grid-column: 1 / span 2;
+    }
 
-  .profile-image-name {
-    color: black;
-    font-size: 13px;
-  }
+    .profile-skill-rating {
+      grid-column: 3 / span 2;
+    }
 
-  .profile-field-heading {
-    font-size: 25px;
-  }
+    .profile-image-name {
+      color: black;
+      font-size: 13px;
+    }
 
-  .profile-details-field {
-    padding-top: 15px;
-  }
+    .profile-field-heading {
+      font-size: 25px;
+    }
 
-  .avatar {
-    border-radius: 50%
-  }
+    .profile-details-field {
+      padding-top: 15px;
+    }
 
-  .progressbar {
-    background-color: papayawhip;
-    border-radius: 13px;
-    /* (height of inner div) / 2 + padding */
-    padding: 1px;
-    text-align: center;
-  }
+    .avatar {
+      border-radius: 50%
+    }
 
-  .progressbar>div {
-    background-color: orange;
-    /* Adjust with JavaScript */
-    height: 15px;
-    border-radius: 10px;
-  }
+    .progressbar {
+      background-color: papayawhip;
+      border-radius: 13px;
+      /* (height of inner div) / 2 + padding */
+      padding: 1px;
+      text-align: center;
+    }
 
-  @media (max-width: 850px) {
+    .progressbar>div {
+      background-color: orange;
+      /* Adjust with JavaScript */
+      height: 15px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 850px) {
+      .main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sidebar" "content" "footer";
+      }
+      .profile-details {
+        text-align: center
+      }
+    }
+
+    @media (min-width: 850px) {
+      .main {
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "sidebar sidebar content content content" "sidebar sidebar content content content" "sidebar  sidebar  footer footer footer";
+      }
+    }
+
     .main {
-      grid-template-columns: 1fr;
-      grid-template-areas: "sidebar" "content" "footer";
+      grid-gap: 10px;
+      color: black;
+      display: grid;
     }
-    .profile-details {
-      text-align: center
+
+
+    .box {
+      border-radius: 1px;
+      padding: 10px;
+      -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
+      z-index: 10;
     }
-  }
 
-  @media (min-width: 850px) {
-    .main {
-      height: 100vh;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "sidebar sidebar content content content" "sidebar sidebar content content content" "sidebar  sidebar  footer footer footer";
+    .content-heading {
+      font-size: 32px;
+      padding-bottom: 10px;
     }
-  }
 
-  .main {
-    grid-gap: 10px;
-    color: black;
-    display: grid;
-  }
+    .experience {
+      padding: 15px;
+    }
 
+    .experience-head {
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
 
-  .box {
-    border-radius: 1px;
-    padding: 10px;
-    -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-  }
+    .experience-duration {
+      font-size: 16px;
+      padding-bottom: 7px;
+    }
 
-  .content-heading {
-    font-size: 32px;
-    padding-bottom: 10px;
-  }
-
-  .experience {
-    padding: 15px;
-  }
-
-  .experience-head {
-    font-size: 25px;
-    padding-bottom: 10px;
-  }
-
-  .experience-duration {
-    font-size: 16px;
-    padding-bottom: 7px;
-  }
-
-  .social-media {
-    text-align: center;
-  }
-</style>
+    .social-media {
+      text-align: center;
+    }
+  </style>
+</head>
 
 <body>
   <div class="main">
