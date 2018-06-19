@@ -121,6 +121,12 @@
       color: #444;
     }
 
+    .about-me-content {
+      padding: 15px;
+      padding-bottom: 20px;
+      color: #444;
+    }
+
     .experience-head {
       font-size: 25px;
       padding-bottom: 10px;
@@ -133,6 +139,11 @@
 
     .social-media {
       text-align: center;
+    }
+
+    .no-highlight {
+      text-decoration: none;
+      color: #444;
     }
   </style>
 </head>
@@ -165,13 +176,17 @@
           <div class="profile-details-field">
             <span>
               <i class="material-icons" style="vertical-align: middle">email</i>
-              aaabhilash97@gmail.com
+              <a class="no-highlight" href="mailto:aaabhilash97@gmail.com">
+                aaabhilash97@gmail.com
+              </a>
             </span>
           </div>
           <div class="profile-details-field">
             <span>
               <i class="material-icons" style="vertical-align: middle">phone</i>
-              +919895774319
+              <a class="no-highlight" href="tel:+919895774319">
+                +919895774319
+              </a>
             </span>
           </div>
         </div>
@@ -234,9 +249,24 @@
           <a href="https://reactjs.org/">ReactJS</a> nowadays.
         </div>
       </div>
+      <hr>
+      <div class="profile-skill-fields">
+        <div class="profile-skill-name">
+          Expert in Git, Gitlab CI/CD, AWS, Linux.
+        </div>
+      </div>
     </div>
 
     <div class="box content">
+      <div class="content-heading">
+        <i class="material-icons" style="vertical-align: middle">account_circle</i>
+        About Me
+      </div>
+
+      <div class="about-me-content">
+        I am a seasoned expert Full Stack Developer who is prtotyping and developing softwares for working organization.
+      </div>
+
       <div class="content-heading">
         <i class="material-icons" style="vertical-align: middle">card_travel</i>
         Work Experience
@@ -253,7 +283,6 @@
           Handling multiple projects on multiple domains, like IOT backend, cloud storage etc.
         </div>
       </div>
-
       <div class="experience">
         <div class="experience-head">
           Software Engineer @ Option3.io.
