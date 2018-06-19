@@ -20,25 +20,14 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      height: calc(100vh - 50px);
-      overflow-y: scroll;
     }
 
     .content {
       grid-area: content;
-      height: calc(100vh - 50px);
-      overflow-y: scroll;
     }
 
     .footer {
-      background-color: white;
-      height: 30px;
       grid-area: footer;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
     }
 
     .profile-details {
@@ -105,9 +94,6 @@
         grid-template-columns: 1fr;
         grid-template-areas: "sidebar" "content" "footer";
       }
-      .social-media-head {
-        display: inline;
-      }
     }
 
     @media (min-width: 850px) {
@@ -115,6 +101,26 @@
         height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "sidebar sidebar content content content" "sidebar sidebar content content content" "sidebar  sidebar  footer footer footer";
+      }
+      .sidebar {
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+      }
+
+      .content {
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+      }
+
+      .footer {
+        background-color: white;
+        height: 30px;
+        grid-area: footer;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
       }
     }
 
