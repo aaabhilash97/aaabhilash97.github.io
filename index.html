@@ -26,6 +26,11 @@
       grid-area: footer;
     }
 
+    .profile-details {
+      text-align: center;
+      color: #444;
+    }
+
     .profile-skill-fields {
       display: grid;
       grid-gap: 1px;
@@ -56,6 +61,11 @@
       padding-top: 15px;
     }
 
+    .profile-skill-fields-other {
+      padding: 10px;
+      color: #444;
+    }
+
     .avatar {
       border-radius: 50%
     }
@@ -80,11 +90,6 @@
         grid-template-columns: 1fr;
         grid-template-areas: "sidebar" "content" "footer";
       }
-    }
-
-    .profile-details {
-      text-align: center;
-      color: #444;
     }
 
     @media (min-width: 850px) {
@@ -242,18 +247,20 @@
         </div>
       </div>
       <hr>
-      <div class="profile-skill-fields">
-        <div class="profile-skill-name">
-          Learning
-          <a href="https://golang.org/">GO</a>,
-          <a href="https://reactjs.org/">ReactJS</a> nowadays.
-        </div>
+      <div class="profile-skill-fields-other">
+        Learning
+        <a href="https://golang.org/">GO</a>,
+        <a href="https://reactjs.org/">ReactJS</a> nowadays.
       </div>
       <hr>
-      <div class="profile-skill-fields">
-        <div class="profile-skill-name">
-          Expert in Git, Gitlab CI/CD, AWS, Linux.
-        </div>
+      <div class="profile-skill-fields-other">
+        Expert in Git, Gitlab CI/CD, AWS, Linux, Redis, MySql, MongoDB, DynamoDB, BeanstalkD, nginx, haproxy, Node.js frameworks
+        like
+        <a class="no-highlight" href="http://expressjs.com/">Express.js</a>,
+        <a class="no-highlight" href="https://www.fastify.io/">fastify</a>.
+      </div>
+      <div class="profile-skill-fields-other">
+        Testing Framework and tools like Mocha, chai, supertest.
       </div>
     </div>
 
