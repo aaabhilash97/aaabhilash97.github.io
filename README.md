@@ -1,2 +1,3 @@
 # resume
-Abhilash KM, Node.js, Javascript Developer
+Abhilash KM,
+Golang, Node.js, Javascript, Python Developer
